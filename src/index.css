@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Outfit:wght@100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: 'Outfit';
+}
+
+.home {
+  background-color: black;
+  color: white;
+}
+
+.Profile {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.profile-image {
+  min-height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: linear-gradient(to right, #009fff, #ec2f4b);
+}
+
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 25%;
+  width: 300px;
+  height: 250px;
+}
+
+.image img {
+  width: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.choose-file {
+  /* background-color: rgb(255, 255, 255); */
+  padding: 0.5rem;
+  position: absolute;
+  top: 90%;
+  display: flex;
+  width: 12.5%;
+  align-items: center;
+  justify-content: center;
+}
+
+.choose-file input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.profile-container {
+  min-height: fit-content;
+  padding: 5rem 0 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-items {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.Gender {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.g-items {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bio {
+  border-bottom: 2px solid;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 5px;
+}
+
+.bio input {
+  width: 100%;
+  height: 5vh;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1rem;
+}
+
+.intro{
+  background-color: black;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.intro-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: fit-content;
+}
+.App-logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.App-logo img{
+  width: 65%;
+}
+.made{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateY(300%);
+  gap: 1rem;
+}
+.made h5{
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+}
+.logo-name h3{
+  font-size: 1.5rem;
+  font-family: 'Orbitron';
+}
+.logo-name{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.Login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #eacda3, #d6ae7b);
+}
+
+.login-form {
+  padding: 2rem;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.333);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 30%;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1rem;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  padding: 0.5rem;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+.input input {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  width: 300px;
+  height: 5vh;
+}
+
+.rem {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.rem h5 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.remember a {
+  color: black;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn button {
+  background-color: black;
+  color: white;
+  border: none;
+  width: 300px;
+  height: 5vh;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.4s ease-out;
+}
+
+.btn button:hover {
+  background-color: #ff007b;
+  transition: 0.4s ease-in;
+}
+
+.login-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.message {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-top: 2.5rem;
+}
+
+header {
+  display: flex;
+  background-color: rgba(3, 3, 3, 0.203);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0.5rem 2%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.logo img {
+  width: 37%
+}
+
+.search-box {
+  display: flex;
+  padding-left: 1rem;
+  background-color: rgb(39, 39, 39);
+  border-radius: 5px;
+}
+
+.search-box input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  width: 450px;
+  font-size: 1rem;
+}
+
+.search-box img {
+  padding: 0.75rem;
+  background-color: #ff007b;
+  border-radius: 0 5px 5px 0;
+  transition: 0.4s ease-out;
+}
+
+.search-box img:hover {
+  background-color: #ff00dd;
+  transform: 0.4s ease-in;
+  cursor: pointer;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 1rem 0.5rem 2rem;
+  border-radius: 50px;
+  background-color: white;
+  color: black;
+}
+
+.profile img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.profile a img {
+  width: 30px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.Activity {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.Activity img {
+  width: 25px;
+}
+
+.ProfilePage{
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.heading{
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+
+.user-info-container{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.user-items{
+  padding: 2rem;
+  background: rgb(235, 235, 235);
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+}
+.user-p{
+  display: flex;
+  align-items: center;
+  gap: 1rem;  
+}
+.user-p img{
+  width: 8%;
+  border-radius: 50%;
+}
+.user-name{
+  font-size: 0.8rem;
+}
+.user-name h3{
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.edit{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem;
+  background-color: rgb(216, 216, 216);
+  border: 1.5px solid rgb(180, 180, 180);
+  border-radius: 5px;
+}
+
+.Personal{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (max-width :763px){
+  .made{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(400%);
+    gap: 1rem;
+  }
+  .made h5{
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+  }
+  .logo-name img{
+    width: 30%;
+  }
+  .logo-name h3{
+    font-size: 1.3rem;
+    font-family: 'Orbitron';
+  }
+  .logo-name{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  .image{
+    width: 150px;
+    height: 275px;
+  }
+  .profile-items{
+    padding: 0 1rem;
+  }
+  .label input{
+    width: 300px;
+  }
+  .Gender{
+   justify-content: space-evenly;
+  }
+}
+
